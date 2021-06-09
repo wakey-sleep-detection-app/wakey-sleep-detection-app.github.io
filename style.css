@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background: #f0f0f0 !important;
+  scroll-behavior: smooth;
+}
+
+.title,
+.subtitle {
+  font-family: "Fredoka One", cursive;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.subtitle {
+  font-size: 22px;
+}
+
+.top-nav {
+  position: fixed;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  z-index: 99;
+  padding: 25px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.top-nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.btn-rounded {
+  background: transparent;
+  padding: 4px 24px;
+  font-weight: bold;
+  border: solid #059e94 4px;
+  border-radius: 25px;
+  transition: all linear 0.15s;
+}
+
+.btn-rounded:hover {
+  background: #059e94;
+  color: #ffffff;
+  transition: all linear 0.15s;
+}
+
+.btn-nav {
+  width: 150px !important;
+}
+
+.top-nav-buttons {
+  display: flex;
+}
+
+#burger-menu-btn {
+  display: none;
+  z-index: 9999;
+}
+
+.sidenav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 150px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0f0f0;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background: #259e9e !important;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10%;
+  gap: 50px;
+}
+
+.section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.section-text {
+  width: 100%;
+}
+
+.section-img-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-img {
+  width: 80%;
+}
+
+.section-img-foxy {
+  width: 50%;
+}
+
+.section-advantages {
+  background: #259e9e;
+  color: #f0f0f0 !important;
+}
+
+.section-advantages {
+  background: #259e9e;
+  color: #f0f0f0 !important;
+}
+
+.section-accidents {
+  background: #cc5e5e;
+  color: #f0f0f0 !important;
+}
+
+.section-mission,
+.section-download {
+  background: #2b3a67;
+  color: #f0f0f0 !important;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background: #259e9e;
+}
+
+.welcome-title,
+.welcome-subtitle {
+  font-family: "Fredoka One", cursive;
+  font-weight: 500;
+  color: #fdc053;
+  text-align: center;
+  width: 100%;
+  user-select: none;
+}
+
+.welcome-title-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-title {
+  font-size: 124px;
+}
+.welcome-subtitle {
+  font-size: 64px;
+}
+.arrow-down {
+  width: 80px;
+  height: 80px;
+  margin-top: 16px;
+}
+
+.text-normal {
+  font-size: 24px;
+  font-family: "Chivo", regular;
+}
+
+.section-title {
+  font-size: 64px;
+}
+
+@media (max-width: 1025px) {
+  .top-nav-buttons,
+  #top-nav-subtitle {
+    display: none;
+  }
+  #burger-menu-btn {
+    display: block;
+  }
+  .welcome-title {
+    font-size: 86px;
+  }
+  .welcome-subtitle {
+    font-size: 32px;
+  }
+  .section {
+    flex-direction: column !important;
+  }
+  .section-img {
+    width: 100%;
+  }
+  .section-img-foxy {
+    width: 30%;
+  }
+  .text-normal {
+    font-size: 16px;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .logo {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .top-nav {
+    padding: 10px;
+  }
+}
+
+.fab-download-container {
+  width: 250px;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 25px;
+}
+
+.fab-download-img {
+  width: 100%;
+  height: auto;
+}
+
+.dismiss-btn {
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dismiss-cross {
+  color: #f0f0f0;
+}
+
+.clickable {
+  cursor: pointer;
+}
