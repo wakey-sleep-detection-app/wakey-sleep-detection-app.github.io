@@ -18,13 +18,31 @@ burger.addEventListener("click", () => {
 });
 
 const slideIn = [
-  { transform: "translateX(100%)", visibility: "hidden" },
-  { transform: "translateX(0)", visibility: "visible" },
+  {
+    transform: "translateX(100%)",
+    "-webkit-transform": "translateX(100%)",
+    visibility: "hidden",
+  },
+  {
+    transform: "translateX(0)",
+    "-webkit-transform": "translateX(0)",
+    visibility: "visible",
+  },
 ];
 
 const slideOut = [
-  { transform: "translateX(0)", visibility: "visible", opacity: 1 },
-  { transform: "translateX(100%)", visibility: "hidden", opacity: 0 },
+  {
+    transform: "translateX(0)",
+    "-webkit-transform": "translateX(0)",
+    visibility: "visible",
+    opacity: 1,
+  },
+  {
+    transform: "translateX(100%)",
+    "-webkit-transform": "translateX(100%)",
+    visibility: "hidden",
+    opacity: 0,
+  },
 ];
 
 document.querySelector("#welcome-arrow-down").addEventListener("click", () => {
