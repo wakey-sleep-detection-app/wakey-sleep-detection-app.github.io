@@ -92,14 +92,15 @@ document.querySelector("#btn-faq-sidenav").addEventListener("click", () => {
 const fabDismissButton = document.querySelector("#fab-dismiss-btn");
 const fabButton = document.querySelector("#fab-download-container");
 
-const isFabButtonDismissed = localStorage.getItem("fab-dismissed") === "true";
+const isFabButtonDismissed = sessionStorage.getItem("fab-dismissed") === "true";
 
 if (isFabButtonDismissed) {
   fabButton.remove();
 }
 
-fabDismissButton.addEventListener("click", () => {
-  localStorage.setItem("fab-dismissed", true);
+fabDismissButton.addEventListener("click", (event) => {
+  event.stopPropagation();
+  sessionStorage.setItem("fab-dismissed", true);
   fabButton.remove();
 });
 
