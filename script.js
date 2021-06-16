@@ -60,8 +60,8 @@ document
     toggleSidenav();
   });
 
-document.querySelector("#btn-our-mission").addEventListener("click", () => {
-  window.location.href = "#our-mission";
+document.querySelector("#btn-our-team").addEventListener("click", () => {
+  window.location.href = "#team";
 });
 
 document.querySelector("#btn-faq").addEventListener("click", () => {
@@ -69,9 +69,9 @@ document.querySelector("#btn-faq").addEventListener("click", () => {
 });
 
 document
-  .querySelector("#btn-our-mission-sidenav")
+  .querySelector("#btn-our-team-sidenav")
   .addEventListener("click", () => {
-    window.location.href = "#our-mission";
+    window.location.href = "#team";
     toggleSidenav();
   });
 

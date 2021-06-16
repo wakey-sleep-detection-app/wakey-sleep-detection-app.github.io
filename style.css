@@ -151,6 +151,73 @@ html {
   color: #f0f0f0 !important;
 }
 
+.section-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 5% 10%;
+  background: #ffe8e1;
+}
+
+.team-members {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  place-items: center;
+  margin-top: 60px;
+}
+
+.team-member-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform ease-in-out 0.25s;
+  cursor: pointer;
+  flex: 1;
+}
+
+.team-member-wrapper:hover {
+  transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transition: transform ease-in-out 0.25s;
+}
+
+.team-member-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member-name {
+  font-size: 32px;
+  font-family: "Fredoka One", cursive;
+  font-weight: 500;
+  color: #fdc053;
+  margin: 6px;
+}
+
+.team-member-location,
+.team-member-education {
+  font-size: 16px;
+  font-family: "Chivo", regular;
+  color: #2e2e2e;
+  margin: 4px;
+}
+
+.team-member-education {
+  margin: 0 !important;
+}
+
+.team-member-img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
 .section-mission,
 .section-download {
   background: #2b3a67;
@@ -240,6 +307,15 @@ html {
   }
   .top-nav {
     padding: 10px;
+  }
+  .section-team {
+    padding: 10% !important;
+  }
+  .team-member-img {
+    width: 150px !important;
+  }
+  .team-members {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
